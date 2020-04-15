@@ -780,8 +780,8 @@ float readThermocouple(int CS, float calibrate) //device selected by passing in 
 
  // digitalWrite(CS,HIGH); // Disable device 1
 
-  value = value + calibrate;          // Add the calibration value
-  temp = (value*0.25);            // Multiply the value by 0.25 to get temp in ˚C
+   temp = value + calibrate;          // Add the calibration value
+ // temp = value;
 
   // return -1 if an error occurred, otherwise return temp
  // if(error_tc == 0) {
